@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "b2b-app"
+client_id = "a04f23919ae0ef5924cd55ffe06b8f38"
+application_url = "https://spouse-reservoir-cnn-polls.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://spouse-reservoir-cnn-polls.trycloudflare.com/auth/callback",
+  "https://spouse-reservoir-cnn-polls.trycloudflare.com/auth/shopify/callback",
+  "https://spouse-reservoir-cnn-polls.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "milan-dev-2.myshopify.com"
